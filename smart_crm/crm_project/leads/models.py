@@ -23,6 +23,7 @@ class Lead(models.Model):
     
     follow_up_date = models.DateField(null=True, blank=True)
     
+    # Will be created based on the date and time field if true.
     created_at = models.DateTimeField(auto_now_add=True)
 
     def save(self, *args, **kwargs):
